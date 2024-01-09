@@ -6,12 +6,16 @@
 // Execute `rustlings hint tests2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
+fn makes_string() -> String {
+    "T".to_string()
+}
 #[cfg(test)]
 mod tests {
+    use super::*;
     #[test]
     fn you_can_assert_eq() {
-        assert_eq!();
+        let a = makes_string();
+        assert_eq!(String::from("T"), a);
     }
 }
